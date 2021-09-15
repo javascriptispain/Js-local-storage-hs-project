@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: linear-gradient(45deg, #f12711, #f5af19); */
+  background: #8a2387;
+  height: 100vh;
+}
+
+#container {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  /* background: linear-gradient(45deg, #8a2387, #e94057, #f27121); */
+  animation-timing-function: ease-out;
+  animation-name: containerAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+  left: 23vw;
+  top: 14vh;
+  background-color: white;
+  width: 54vw;
+  height: 75vh;
+  border: white 2px slolid;
+  border-radius: 5%;
+}
+@keyframes containerAnimation {
+  0% {
+    background: #8a2387;
+  }
+  50% {
+    background: #e94057;
+  }
+  100% {
+    background: #f27121;
+  }
+}
+#innerContainer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  position: relative;
+  top: 23vh;
+  left: 12vw;
+}
+.emal {
+  font-size: 20px;
+}
+
+#eSubmit {
+  font-size: 20px;
+}
+#email {
+  font-size: 20px;
+}
+
+.pw {
+  font-size: 20px;
+}
+
+#pSubmit {
+  font-size: 20px;
+}
+
+#passwordid {
+  font-size: 20px;
+}
